@@ -17,63 +17,69 @@ body {
 
 .btn-area {
     display: inline-block;
-    width: 100%;
-    padding: 10px 10px;
+    width: calc(100% - 40px);
+	margin:0 auto;
 }
 .btn {
     display: inline-block;
-    font-weight: 400;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-}
+    width:100%;
+	height:46px;
+	line-height:46px;
+	text-align:center;
+	color:#fff;
 
-/*button Size*/
+}
+.btn.orange{background:#f07249;}
 
-.btn.btnS {
-    padding: 8px 16px;
-}
-.btn.btnM {
-    padding: 12px 30px;
-    font-size: 16px;
-}
-.btn.btnB {
-    padding: 16px 40px;
-    font-size: 16px;
-    font-weight: 600;
-}
-.btn.btnF {
-    width: 100%;
-    padding: 16px 40px;
-    font-size: 16px;
-    font-weight: 600;
-}
+/* common */
+.mgt10{margin-top:10px;}
+.mgt20{margin-top:20px;}
+.mgt30{margin-top:30px;}
 
-/*button Color*/
+/*  loading  */
+body.loading {background:#f07249;text-align:center}
+body.loading article.logo h1 {display:block;position:absolute;left:50%;top:50%;margin:-7.022rem 0 0 -3.75rem;width:7.5rem;height:6.563rem;text-indent:-6249.938rem;background:url('../images/loading-logo.png') no-repeat center / 100%}
+body.loading article.logo hr{display:inline-block;position:absolute;top:50%;left:50%;margin:56px 0 0 -8px;width:16px;height:2.6px;background:#fff;}
+body.loading article.logo p {display:block;color:#fff;font-size:26px;position:absolute;top:50%;margin:112px 0 0 0;width:100%;font-weight:500;text-align:center;}
 
-.btn.default {
-    color: #333;
-    background-color: #fff;
-    border-color: #ccc;
-}
-.btn.main {
-    background-color: #ff6600;
-}
-.btn.sub {
-    background-color: #333;
-}
-.btn.extra {
-    background-color: #e2e2e2;
-    color: #666;
-}
+/* intro */
+body.intro {background:#f4f7f8;text-align:center}
+body.intro article.logo{position:relative;width:100%;height:280px;}
+body.intro article.logo h1 {display:block;position:absolute;left:50%;top:60px;margin:0 0 0 -3.75rem;width:7.5rem;height:6.563rem;text-indent:-6249.938rem;background:url('../images/intro-logo.png') no-repeat center / 100%}
+body.intro article.logo hr{display:inline-block;position:absolute;top:186px;left:50%;margin:0 0 0 -8px;width:16px;height:2.6px;background:#f07249;}
+body.intro article.logo p {display:block;font-size:26px;position:absolute;top:220px;margin:0 0 0 0;width:100%;font-weight:500;text-align:center;color:#333;}
+
+body.intro article.memJoin{display:block;width:calc(100% - 40px);height:auto;margin:0 auto;}
+body.intro article.memJoin ul{display:block;width:100%;background:#fff;border-left:1px solid #eaeaea;border-right:1px solid #eaeaea;}
+body.intro article.memJoin ul li{width:100%;height:45px;line-height:45px;border-top:1px solid #eaeaea;text-align:left;}
+body.intro article.memJoin ul li.facebook:before{content:'';display:inline-block;width:20%;height:45px;background:url('../images/icon-facebook.png') no-repeat center;text-align:center;background-size:8px 18px;}
+body.intro article.memJoin ul li.instagram:before{content:'';display:inline-block;width:20%;height:45px;background:url('../images/icon-instagram.png') no-repeat center;text-align:center;background-size:18px 18px;}
+body.intro article.memJoin ul li.email:before{content:'';display:inline-block;width:20%;height:45px;background:url('../images/icon-email.png') no-repeat center;text-align:center;background-size:17px 13px;}
+body.intro article.memJoin ul li a{display:inline-block;width:80%;height:45px;line-height:45px;vertical-align:top;font-size:13px;font-weight:600;color:#333;}
+body.intro article.memJoin ul li:last-child{border-bottom:1px solid #eaeaea;}
+
+body.intro article.btn-area{display:block;width:calc(100% - 40px);height:auto;margin:0 auto;}
+body.intro article.btn-area a{display:block;width:100%;height:46px;line-height:46px;font-size:15px;font-weight:600;color:#fff;background:#333;text-align:center;}
+body.intro article.btn-area a.login{background:#f07249;margin-bottom:15px;}
+
+/* locationAgree */
+body.location{background:#fff;text-align:center;}
+body.location article.locationAgree{position:relative;width:100%;height:auto;padding-top:100px;}
+body.location h1{display:inline-block;font-size:24px;font-weight:600;color:#333;padding-bottom:15px;border-bottom:1px solid #eaeaea;}
+body.location a.locationClose{position:absolute;top:20px;right:20px;width:40px;height:40px;background:url('../images/icon-popClose.png') no-repeat center;text-indent:-9999px;}
+body.location img{display:block;width:106px;height:106px;margin:45px auto;}
+body.location p{font-size:18px;color:#333;line-height:1.4;}
+body.location p strong{font-weight:600;}
+body.location p.agree{display:inline-block;font-size:13px;font-weight:600;margin:25px 0 15px 0;color:#f07249;border-bottom:1px solid #f07249;padding-bottom:7px;}
+body.location a{display:block;width:80%;height:60px;line-height:60px;font-size:16px;font-weight:600;text-align:center;margin:0 auto;color:#fff;background:#333;}
+
+/* joinStep01 */
+body.join{background:#f4f7f8;text-align:center;}
+body.join article.joinStep01{position:relative;width:100%;height:auto;}
+body.join article > h1{width:100%;height:48px;line-height:48px;font-size:18px;font-weight:600;color:#333;text-align:center;}
+body.join article > h1 + a.prev{position:absolute;top:16px;left:13px;display:inline-block;width:10px;height:19px;background:url('../images/icon-prev.png') no-repeat center;background-size:10px 19px;text-indent:-9999px;}
+body.join article.joinStep01 ul{width:100%;}
+body.join article.joinStep01 ul li{width:100%;height:45px;line-height:45px;border-top:1px solid #eaeaea;text-align:left;}
+body.join article.joinStep01 ul li a{position:relative;display:inline-block;width:100%;height:45px;line-height:45px;font-size:13px;font-weight:600;color:#333;padding:0 10px;}
+body.join article.joinStep01 ul li a:after{content:'';position:absolute;top:50%;margin-top:-6px;right:3%;width:6px;height:12px;display:inline-block;background:url('../images/icon-nextStep.png' ) no-repeat right center;background-size:6px 12px;}
+body.join article.joinStep01 ul li:last-child{border-bottom:1px solid #eaeaea;}
