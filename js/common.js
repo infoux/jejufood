@@ -2,6 +2,12 @@ $(document).ready(function() {
 	$('ul.list-type02 li a').click(function(){
 		$(this).toggleClass('checked');
 	});
+	$('a.select').click(function(){
+		$(this).toggleClass('checked');
+	});
+	$('a.checkbox').click(function(){
+		$(this).toggleClass('checked');
+	});
 
 	$('article#filterPopup .close').click(function(){
 		$(this).parent().parent().hide();

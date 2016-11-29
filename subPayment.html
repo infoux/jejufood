@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>제주푸드</title>
+
+	<link rel="stylesheet" type="text/css" href="css/set.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="sub pay">
+	<header>
+		<h1><a href="#">결제</a></h1>
+		<a href="#" class="prev">이전</a>
+		<section class="util-menu">
+			<ul>
+				<li><a href="#" class="trash">휴지통</a></li>
+			</ul>
+		</section>
+	</header>
+	<article class="contentDetail">
+		<h2>쿠폰 내역</h2>
+		<ul class="couponList">
+			<li>VIP 5% 할인 쿠폰<a href="#">적용</a></li>
+			<li>음료수 1병 무료 쿠폰<a href="#" class="used">사용</a></li>
+		</ul>
+		<h2>주문 내역</h2>
+		<ul class="orderList">
+			<li>오늘의 정식<strong>* 3</strong><span>60,000원</span></li>
+			<li>생선구이<span>30,000원</span></li>
+			<li>된장찌개<strong>* 16</strong><span>1,250,000원</span></li>
+			<li class="discount">VIP 5% 할인 쿠폰<span>-67,000원</span></li>
+			<li class="total">총 결제 금액<span>1,273,000원</span></li>
+		</ul>
+		<h2>주문 테이블</h2>
+		<div class="orderTable">
+			<h3>T. 02<a href="#" class="fold"><i class="fa fa-chevron-circle-down"></i></a></h3>
+			<textarea placeholder="내용을 입력하시기 바랍니다."></textarea>
+		</div>
+		<h2>결제 수단 선택</h2>
+		<div class="payment">
+		<a href="#" class="select">어플에서 결제<i>선택됨</i></a>어플에서 결제
+			<ul class="payList">
+				<li><a href="#">신용카드</a></li>
+				<li><a href="#" class="active">PAY1</a></li>
+				<li><a href="#">PAY2</a></li>
+			</ul>
+			<hr>
+			<a href="#" class="select">매장 결제<i>선택됨</i></a>매장 결제
+			<p>
+				매장결제 시 매장에 도착하신 후에 주문번호 확인되면 조리가 시작됩니다.
+				<strong>주문번호는 주문/예약메뉴에서 확인 가능합니다.</strong>
+			</p>
+			<hr>
+			<a href="#" class="checkbox"><i>선택됨</i></a>SMS 수신 동의
+			<p>주문 후 음식조리가 시작되면 주문을 취소할 수 없습니다.</p>
+		</div>
+		<p class="btnArea">
+			<a href="javascript:" class="btn orange">결제하기</a>
+		</p>
+	</article>
+</body>
+</html>

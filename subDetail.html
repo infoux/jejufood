@@ -12,6 +12,46 @@
 	<script type="text/javascript" src="js/common.js"></script>
 </head>
 <body class="sub">
+	<article id="reservePopup">
+		<section class="popupInner">
+			<a href="#" class="close">닫기</a>
+			<h1 class="popupTitle">예약하기</h1>
+			<ul>
+				<li>
+					<input type="text" placeholder="예약자명"/>
+				</li>
+				<li>
+					<span>인원</span>
+					<button class="plus">+</button>
+					<input type="text" value="15" class="count"/>
+					<button class="minus">-</button>
+				</li>
+				<li>
+					<input type="text" placeholder="날짜"/>
+				</li>
+				<li>
+					<input type="text" placeholder="시간"/>
+				</li>
+				<li>
+					<input type="text" placeholder="전화번호"/>
+				</li>
+				<li>
+					<span>메모</span>
+				</li>
+				<li>
+					<textarea placeholder="메모를 등록하세요."></textarea>
+				</li>
+			</ul>
+			<p class="text">
+				No-Show 싫어요. 예약문화를 지킵니다.
+				<strong>예약 정보는 주문/예약 메뉴에서 확인 가능합니  다.</strong>
+			</p>
+			<p class="popupBtn">
+				<a href="#" class="btn orange">예약하기</a>
+				<a href="#" class="btn blackL">예약취소</a>
+			</p>
+		</section>
+	</article>	
 	<header>
 		<h1><a href="#">혜자 정식</a></h1>
 		<a href="#" class="prev">이전</a>
@@ -137,23 +177,33 @@
 				<li><a href="javascript:" rel="recent" class="active">최신순</a></li>
 				<li><a href="javascript:" rel="like">추천순</li>
 			</ul>
-			<div id="recent" class="tab-contents">
+			<div id="recent">
 				<ul>
 					<li>
 						<h4>조동국<small>2016/10/07</small></h4>
 						<div class="star no5"></div>
-						<p class="like">추천<span>365</span></p>
+						<p class="like"><i>추천</i><span>365</span></p>
 						<div class="reviewDetail">
 							<span>깔끔한 가게 내부가 가족모임 장소로 적합합니다.</span>
 							<ul>
-								<li><a href="#" class="pic">사진</a></li>
-								<li><a href="#" class="pic">사진</a></li>
+								<li><a href="#" class="pic"><img src="http://www.gifpng.com/70" /></a></li>
+								<li><a href="#" class="pic"><img src="http://www.gifpng.com/70" /></a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<h4>조동국<small>2016/10/07</small></h4>
+						<div class="star no5"></div>
+						<p class="like"><i>추천</i><span>365</span></p>
+						<div class="reviewDetail">
+							<span>깔끔한 가게 내부가 가족모임 장소로 적합합니다.</span>
+							<ul>
+								<li><a href="#" class="pic"><img src="http://www.gifpng.com/70" /></a></li>
+								<li><a href="#" class="pic"><img src="http://www.gifpng.com/70" /></a></li>
 							</ul>
 						</div>
 					</li>
 				</ul>
-			</div>
-			<div id="like" class="tab-contents">
 			</div>
 		</div>
 	</article>
