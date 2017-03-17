@@ -160,10 +160,49 @@ nav#mainMenu div.menuInner ul.menu li a{display:block;width:100%;height:39px;lin
 nav#mainMenu div.menuInner ul.menu li a.active,nav#mainMenu div.menuInner ul.menu li a:hover{color:#f07249;}
 
 /*  loading  */
-body.loading {background:#f07249;text-align:center}
-body.loading article.logo h1 {display:block;position:absolute;left:50%;top:50%;margin:-7.022rem 0 0 -3.75rem;width:7.5rem;height:6.563rem;text-indent:-6249.938rem;background:url('../images/loading-logo.png') no-repeat center / 100%}
-body.loading article.logo hr{display:inline-block;position:absolute;top:50%;left:50%;margin:56px 0 0 -8px;width:16px;height:2.6px;background:#fff;}
-body.loading article.logo p {display:block;color:#fff;font-size:26px;position:absolute;top:50%;margin:112px 0 0 0;width:100%;font-weight:500;text-align:center;}
+body.loading {background:url('../images/jejufood_intro.png') no-repeat center / cover;text-align:center}
+body.loading article.logo{position:absolute;bottom:7%;left:10%;display:block;width:80%;height:18.813rem;background:rgba(255,255,255,0.2);animation:fadein 6s;-moz-animation: fadein 6s;-webkit-animation: fadein 6s;-o-animation: fadein 6s;}
+body.loading article.logo ul{font-size:0;}
+body.loading article.logo ul li{display:inline-block;width:50%;height:9.4065rem;vertical-align:top;}
+body.loading article.logo ul li a{display:block;width:100%;height:9.4065rem;line-height:12.188rem;font-size:0.875rem;color:#42413e;border:0.063rem solid #f07249;}
+body.loading article.logo ul li:nth-child(1) a{background:url('../images/kor.png') no-repeat center 2.5rem;background-size:3.563rem 2.25rem;border-right:none;border-bottom:none;}
+body.loading article.logo ul li:nth-child(2) a{background:url('../images/eng.png') no-repeat center 2.5rem;background-size:3.563rem 2.25rem;border-bottom:none;}
+body.loading article.logo ul li:nth-child(3) a{background:url('../images/jp.png') no-repeat center 2.5rem;background-size:3.563rem 2.25rem;border-right:none;}
+body.loading article.logo ul li:nth-child(4) a{background:url('../images/cn.png') no-repeat center 2.5rem;background-size:3.563rem 2.25rem;}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
 
 /* intro */	
 body.intro {background:#f4f7f8;text-align:center}
